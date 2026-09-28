@@ -12,6 +12,7 @@ dependencies = [
     "xgboost",
     "matplotlib",
     "jupyter",
+    "ucimlrepo",
 ]
 
 [project.optional-dependencies]
