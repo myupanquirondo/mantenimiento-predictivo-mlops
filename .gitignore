@@ -35,6 +35,7 @@ htmlcov/
 # MLflow local artifacts
 mlruns/
 mlartifacts/
+mlflow.db
 
 # Models / generated artifacts
 artifacts/
