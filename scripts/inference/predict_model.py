@@ -1,3 +1,5 @@
+import os
+
 import mlflow
 import pandas as pd
 
@@ -5,7 +7,10 @@ import pandas as pd
 # CONFIGURACIÓN DE MLFLOW
 # ============================================================
 
-MLFLOW_TRACKING_URI = "http://127.0.0.1:5000"
+MLFLOW_TRACKING_URI = os.getenv(
+    "MLFLOW_TRACKING_URI",
+    "http://127.0.0.1:5000",
+)
 
 MODEL_NAME = "predictive-maintenance-xgboost"
 MODEL_VERSION = "2"
